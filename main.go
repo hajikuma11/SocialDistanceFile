@@ -30,7 +30,7 @@ func main() {
 		return
 	}
 
-	wfp, err := os.Create("sdt-" + fname)
+	wfp, err := os.Create("sdf-" + fname)
 	defer wfp.Close()
 	if os.IsNotExist(err) {
 		log.Fatal(err)
